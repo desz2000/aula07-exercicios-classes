@@ -46,4 +46,9 @@ public class Livro
     {
         return emprestado;
     }
+
+    String converteParaString()
+    {
+        return String.format("%s. %s (%d). ISBN: %s", this.autor, this.titulo, this.anoPublicacao, this.isbn);
+    }
 }
